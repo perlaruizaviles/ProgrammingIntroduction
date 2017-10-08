@@ -9,11 +9,14 @@ public class PrintTable {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Escribe una palabra:");
 
-        System.out.print("Input a number: ");
-        int num1 = in.nextInt();
 
-//        TODO: print the table
+        float var = 1.9f;
+
+        float a = var / 2;
+
+        System.out.println(a);
 
     }
 

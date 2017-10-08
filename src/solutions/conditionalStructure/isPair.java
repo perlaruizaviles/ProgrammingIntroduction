@@ -1,4 +1,4 @@
-package solutions;
+package solutions.selectStructure;
 
 /**
  * Created by pruiz on 9/24/17.
