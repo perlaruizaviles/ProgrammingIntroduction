@@ -1,4 +1,4 @@
-package solutions.selectStructure;
+package solutions.conditionalStructure;
 
 /**
  * Created by pruiz on 9/24/17.

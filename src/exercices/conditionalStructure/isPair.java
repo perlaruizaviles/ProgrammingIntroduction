@@ -1,4 +1,4 @@
-package exercices;
+package exercices.conditionalStructure;
 
 /**
  * Created by pruiz on 9/24/17.

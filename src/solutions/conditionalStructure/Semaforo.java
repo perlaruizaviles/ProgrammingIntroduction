@@ -1,4 +1,4 @@
-package solutions;
+package solutions.conditionalStructure;
 
 import java.util.Scanner;
 
@@ -26,6 +26,21 @@ public class Semaforo {
         if ( color.equals("amarillo") ){
             System.out.println("You should slow down");
         }
+
+
+        switch (color){
+
+            case "verde":
+                System.out.println("You can pass");
+                break;
+            case "rojo":
+                System.out.println("STOP!");
+                break;
+            default:
+                System.out.println("You should slow down");
+
+        }
+
 
     }
 

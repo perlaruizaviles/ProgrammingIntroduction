@@ -1,4 +1,4 @@
-package exercices;
+package exercices.selectStructure;
 
 import java.util.Scanner;
 

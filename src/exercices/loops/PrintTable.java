@@ -1,5 +1,6 @@
-package exercices;
+package exercices.loops;
 
+import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 /**
@@ -9,14 +10,13 @@ public class PrintTable {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Escribe una palabra:");
+        System.out.print("Introduce el numero de la tabla a calcular:");
 
 
-        float var = 1.9f;
-
-        float a = var / 2;
-
-        System.out.println(a);
+        int result =0;
+        for ( char i = 'a'; i < 'z' ; i++ ){
+            System.out.println(i);
+        }
 
     }
 

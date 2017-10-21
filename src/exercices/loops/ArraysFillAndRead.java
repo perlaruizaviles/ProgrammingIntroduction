@@ -1,4 +1,4 @@
-package exercices;
+package exercices.loops;
 
 /**
  * Created by pruiz on 10/8/17.
