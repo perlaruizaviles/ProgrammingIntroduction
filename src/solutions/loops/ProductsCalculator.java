@@ -31,8 +31,24 @@ public class ProductsCalculator {
 
         for (int i = 0; i < numProducts ; i++){
             System.out.print("Producto: " + arrayProducts[i]);
-            System.out.println(" -- Precio: " + arrayPrices[i]);
+            System.out.print(" \tPrecio: " + arrayPrices[i]);
+            System.out.println(" \tclave: " + (i+1) );
         }
+
+        double precioTotal = 0;
+        while(true){
+
+            System.out.println( "Indique clave de producto:" );
+            int clave = entrada.nextInt();
+            if ( clave == 0 ){
+                break;
+            }
+            System.out.println( "Indique numero de productos:" );
+            double num_elements = entrada.nextDouble();
+            precioTotal += arrayPrices[clave - 1] * num_elements;
+        }
+
+        System.out.println( "Precio a pagar: " + precioTotal);
 
     }
 
