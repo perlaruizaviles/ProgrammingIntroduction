@@ -12,8 +12,8 @@ public class Palindrome {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner input = new Scanner(System.in);
         System.out.println("Escribe la palabra:");
-        String palabra = input.next();
-        char[] palabraArray = palabra.toCharArray();
+        String word = input.next();
+        char[] palabraArray = word.toCharArray();
         int sizeWord = palabraArray.length;
         int middleIndex = sizeWord / 2 - 1;
 
@@ -26,6 +26,16 @@ public class Palindrome {
             }
         }
         System.out.println(true);
+
+        String newWord = "";
+        for( int i = sizeWord ; i >= 0 ; i-- ){
+            newWord+= word.charAt(i);
+        }
+        if ( word.equals(newWord) ){
+            System.out.println(true);
+        }else{
+            System.out.println(false);
+        }
 
     }
 

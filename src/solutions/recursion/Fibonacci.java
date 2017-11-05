@@ -6,16 +6,27 @@ package solutions.recursion;
 public class Fibonacci {
     public static void main(String args[])
     {
-        int n1=0,n2=1,n3,i,count=10;
-        System.out.print(n1+" "+n2);//printing 0 and 1
+        int primerElementoDelPatron=0;
+        int segundoElementoDelPatron=1;
+        int count=10;
 
-        for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed
+        System.out.print(primerElementoDelPatron+" "+segundoElementoDelPatron);//printing 0 and 1
+        int siguienteValor;
+        for(int i = 2 ; i < count; ++i)//loop starts from 2 because 0 and 1 are already printed
         {
-            n3=n1+n2;
-            System.out.print(" "+n3);
-            n1=n2;
-            n2=n3;
+            siguienteValor= primerElementoDelPatron + segundoElementoDelPatron;
+
+            System.out.print(" "+siguienteValor);
+
+            primerElementoDelPatron= segundoElementoDelPatron;
+
+            segundoElementoDelPatron = siguienteValor;
         }
+
+        int [][] m = new int[3][];
+        int [][] m2 = new int[3][3];
+        int [][] m3;
+
 
     }
 }
